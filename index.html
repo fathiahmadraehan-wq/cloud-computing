@@ -223,6 +223,7 @@ tbody tr:last-child td{border-bottom:none;}
 .toast.show{transform:translateY(0);opacity:1;}
 .toast.success{border-color:rgba(16,185,129,0.4);color:#6ee7b7;}
 .toast.error{border-color:rgba(239,68,68,0.4);color:#fca5a5;}
+.toast.warning{border-color:rgba(245,158,11,0.4);color:#fcd34d;}
 
 /* ── PROFILE SECTION ── */
 .profile-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin-bottom:20px;}
@@ -268,8 +269,6 @@ tbody tr:last-child td{border-bottom:none;}
 <div class="page active" id="page-home">
   <div class="hero">
     <div class="hero-bg"></div>
-
-    <!-- Cloud SVG Illustration -->
     <div class="cloud-anim">
       <svg width="380" height="200" viewBox="0 0 380 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -279,13 +278,11 @@ tbody tr:last-child td{border-bottom:none;}
           </radialGradient>
         </defs>
         <ellipse cx="190" cy="140" rx="160" ry="50" fill="url(#glow)"/>
-        <!-- Main cloud -->
         <ellipse cx="190" cy="120" rx="130" ry="48" fill="rgba(59,130,246,0.08)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5"/>
         <circle cx="110" cy="108" r="38" fill="rgba(59,130,246,0.1)" stroke="rgba(59,130,246,0.35)" stroke-width="1.5"/>
         <circle cx="160" cy="88" r="50" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.45)" stroke-width="1.5"/>
         <circle cx="228" cy="92" r="44" fill="rgba(59,130,246,0.11)" stroke="rgba(59,130,246,0.4)" stroke-width="1.5"/>
         <circle cx="285" cy="108" r="34" fill="rgba(59,130,246,0.09)" stroke="rgba(59,130,246,0.35)" stroke-width="1.5"/>
-        <!-- Server inside -->
         <rect x="143" y="100" width="95" height="44" rx="6" fill="rgba(30,42,58,0.9)" stroke="rgba(59,130,246,0.5)" stroke-width="1"/>
         <rect x="150" y="107" width="78" height="8" rx="3" fill="rgba(59,130,246,0.3)"/>
         <rect x="150" y="119" width="78" height="8" rx="3" fill="rgba(6,182,212,0.25)"/>
@@ -293,7 +290,6 @@ tbody tr:last-child td{border-bottom:none;}
         <circle cx="224" cy="111" r="2.5" fill="#10b981"/>
         <circle cx="224" cy="123" r="2.5" fill="#10b981"/>
         <circle cx="224" cy="135" r="2.5" fill="#f59e0b"/>
-        <!-- Devices -->
         <rect x="28" y="30" width="40" height="28" rx="3" fill="rgba(30,42,58,0.8)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
         <rect x="32" y="33" width="32" height="20" rx="2" fill="rgba(59,130,246,0.2)"/>
         <rect x="20" y="58" width="56" height="4" rx="2" fill="rgba(255,255,255,0.2)"/>
@@ -302,22 +298,18 @@ tbody tr:last-child td{border-bottom:none;}
         <circle cx="178" cy="44" r="2" fill="rgba(255,255,255,0.4)"/>
         <rect x="290" y="22" width="44" height="32" rx="4" fill="rgba(30,42,58,0.8)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
         <rect x="294" y="26" width="34" height="24" rx="2" fill="rgba(6,182,212,0.2)"/>
-        <!-- Connection lines -->
         <line x1="48" y1="58" x2="110" y2="100" stroke="rgba(59,130,246,0.4)" stroke-width="1.2" stroke-dasharray="5,4"/>
         <line x1="178" y1="48" x2="178" y2="88" stroke="rgba(139,92,246,0.5)" stroke-width="1.2" stroke-dasharray="5,4"/>
         <line x1="312" y1="54" x2="272" y2="100" stroke="rgba(6,182,212,0.4)" stroke-width="1.2" stroke-dasharray="5,4"/>
-        <!-- Labels -->
         <text x="48" y="26" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="Arial" font-weight="600">LAPTOP</text>
         <text x="178" y="12" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="Arial" font-weight="600">MOBILE</text>
         <text x="312" y="18" fill="rgba(255,255,255,0.5)" font-size="8" text-anchor="middle" font-family="Arial" font-weight="600">TABLET</text>
         <text x="190" y="178" fill="rgba(59,130,246,0.7)" font-size="10" text-anchor="middle" font-family="Arial" font-weight="700" letter-spacing="3">☁ CLOUD INFRASTRUCTURE ☁</text>
       </svg>
     </div>
-
     <div class="hero-badge">☁ Mata Kuliah Cloud Computing · STMIK Widya Pratama</div>
     <h1>Selamat Datang di<br><span>CloudSpace</span></h1>
     <p class="hero-sub">Platform belajar dan praktik Cloud Computing — upload, kelola, dan bagikan file di cloud. Tugas Projek Akhir Mata Kuliah Cloud Computing.</p>
-
     <div class="hero-info">
       <table>
         <tr><td>Dosen Pengampu</td><td>Widiyono, M.Kom</td></tr>
@@ -326,49 +318,22 @@ tbody tr:last-child td{border-bottom:none;}
         <tr><td>Program Studi</td><td>Teknik Informatika · 2025/2026</td></tr>
       </table>
     </div>
-
     <div class="hero-cta">
       <button class="btn btn-primary" onclick="showPage('register')">🚀 Mulai Sekarang</button>
       <button class="btn btn-outline" onclick="showPage('materi')">📚 Lihat Materi</button>
     </div>
   </div>
-
-  <!-- Features -->
   <div style="background:var(--bg2);padding:60px 24px;">
     <div style="max-width:900px;margin:0 auto;text-align:center;">
       <p class="eyebrow" style="text-align:center">Fitur Unggulan</p>
       <h2 style="font-size:28px;font-weight:800;margin-bottom:40px">Platform Cloud Computing Terintegrasi</h2>
       <div class="grid-3">
-        <div class="crd" style="text-align:center">
-          <div class="crd-icon">☁️</div>
-          <h3>Cloud Storage</h3>
-          <p>Upload dan simpan file kamu di cloud. Akses dari mana saja kapan saja dengan keamanan penuh.</p>
-        </div>
-        <div class="crd" style="text-align:center">
-          <div class="crd-icon">🔐</div>
-          <h3>Autentikasi Aman</h3>
-          <p>Sistem login dan register dengan enkripsi data. Setiap pengguna punya ruang penyimpanan pribadi.</p>
-        </div>
-        <div class="crd" style="text-align:center">
-          <div class="crd-icon">📊</div>
-          <h3>Dashboard Analitik</h3>
-          <p>Pantau penggunaan storage, jumlah file, dan aktivitas upload melalui dashboard interaktif.</p>
-        </div>
-        <div class="crd" style="text-align:center">
-          <div class="crd-icon">🔗</div>
-          <h3>Share File</h3>
-          <p>Bagikan file dengan link unik. Kolaborasi mudah tanpa batas ukuran yang rumit.</p>
-        </div>
-        <div class="crd" style="text-align:center">
-          <div class="crd-icon">⚡</div>
-          <h3>Upload Cepat</h3>
-          <p>Drag & drop file langsung ke browser. Progress bar real-time saat upload berlangsung.</p>
-        </div>
-        <div class="crd" style="text-align:center">
-          <div class="crd-icon">🌐</div>
-          <h3>Akses Global</h3>
-          <p>Platform berbasis cloud yang dapat diakses dari seluruh dunia dengan performa tinggi.</p>
-        </div>
+        <div class="crd" style="text-align:center"><div class="crd-icon">☁️</div><h3>Cloud Storage</h3><p>Upload dan simpan file kamu di cloud. Akses dari mana saja kapan saja dengan keamanan penuh.</p></div>
+        <div class="crd" style="text-align:center"><div class="crd-icon">🔐</div><h3>Autentikasi Aman</h3><p>Sistem login dan register dengan enkripsi data. Setiap pengguna punya ruang penyimpanan pribadi.</p></div>
+        <div class="crd" style="text-align:center"><div class="crd-icon">📊</div><h3>Dashboard Analitik</h3><p>Pantau penggunaan storage, jumlah file, dan aktivitas upload melalui dashboard interaktif.</p></div>
+        <div class="crd" style="text-align:center"><div class="crd-icon">🔗</div><h3>Share File</h3><p>Bagikan file dengan link unik. Kolaborasi mudah tanpa batas ukuran yang rumit.</p></div>
+        <div class="crd" style="text-align:center"><div class="crd-icon">⚡</div><h3>Upload Cepat</h3><p>Drag & drop file langsung ke browser. Progress bar real-time saat upload berlangsung.</p></div>
+        <div class="crd" style="text-align:center"><div class="crd-icon">🌐</div><h3>Akses Global</h3><p>Platform berbasis cloud yang dapat diakses dari seluruh dunia dengan performa tinggi.</p></div>
       </div>
     </div>
   </div>
@@ -377,15 +342,11 @@ tbody tr:last-child td{border-bottom:none;}
 <!-- ══════════ MATERI PAGE ══════════ -->
 <div class="page" id="page-materi">
   <div class="content-page">
-
-    <!-- Header materi -->
     <div style="text-align:center;margin-bottom:48px;padding-top:20px;">
       <p class="eyebrow" style="text-align:center">Projek Akhir</p>
       <h1 style="font-size:clamp(24px,4vw,40px);font-weight:900;margin-bottom:12px;">Materi Cloud Computing</h1>
       <p style="color:var(--text2);font-size:15px;">Disusun oleh <strong style="color:var(--text)">Fathi Ahmad Raehan</strong> · NIM <strong style="color:var(--text)">24.240.0069</strong> · Dosen: <strong style="color:var(--text)">Widiyono, M.Kom</strong></p>
     </div>
-
-    <!-- 1. PENGERTIAN -->
     <div class="section-block">
       <p class="eyebrow">Bagian 01</p>
       <h2>Pengertian Cloud Computing</h2>
@@ -398,7 +359,6 @@ tbody tr:last-child td{border-bottom:none;}
         <div class="crd"><div class="tag tag-orange">NIST · Karakteristik 4</div><h3>⚡ Rapid Elasticity</h3><p>Kapasitas dapat diprovisikan dan dirilis secara elastis sesuai permintaan, tampak tidak terbatas bagi konsumen.</p></div>
         <div class="crd"><div class="tag tag-green">NIST · Karakteristik 5</div><h3>📊 Measured Service</h3><p>Penggunaan sumber daya diukur secara otomatis — transparan untuk penyedia dan konsumen (pay-as-you-go).</p></div>
       </div>
-      <!-- Adoption stats -->
       <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin-top:24px;">
         <h3 style="font-size:16px;font-weight:700;margin-bottom:20px;">📈 Adopsi Cloud Global 2024</h3>
         <div class="stat-row"><span class="stat-lbl">Perusahaan pakai cloud</span><div class="stat-track"><div class="stat-fill" style="width:94%;background:linear-gradient(90deg,#3b82f6,#06b6d4)"></div></div><span class="stat-pct">94%</span></div>
@@ -408,8 +368,6 @@ tbody tr:last-child td{border-bottom:none;}
         <p style="font-size:11px;color:var(--text3);margin-top:8px">Sumber: Flexera State of the Cloud Report 2024</p>
       </div>
     </div>
-
-    <!-- 2. MODEL LAYANAN -->
     <div class="section-block">
       <p class="eyebrow">Bagian 02</p>
       <h2>Model Layanan Cloud</h2>
@@ -428,8 +386,6 @@ tbody tr:last-child td{border-bottom:none;}
         </table>
       </div>
     </div>
-
-    <!-- 3. MODEL PENERAPAN -->
     <div class="section-block">
       <p class="eyebrow">Bagian 03</p>
       <h2>Model Penerapan Cloud</h2>
@@ -442,8 +398,6 @@ tbody tr:last-child td{border-bottom:none;}
         <div class="deploy-card dc-4"><div class="deploy-icon">🕸️</div><h3>Multi-Cloud</h3><p>Menggunakan layanan dari dua penyedia atau lebih. Menghindari vendor lock-in dan memaksimalkan layanan terbaik.</p><div class="dc-feat">✓ Bebas vendor lock-in &nbsp; ✓ Redundansi</div></div>
       </div>
     </div>
-
-    <!-- 4. VIRTUALISASI -->
     <div class="section-block">
       <p class="eyebrow">Bagian 04</p>
       <h2>Teknologi Enabler: Virtualisasi</h2>
@@ -479,8 +433,6 @@ tbody tr:last-child td{border-bottom:none;}
         <div class="crd"><div class="crd-icon">🐳</div><h3>Containerization</h3><p>Virtualisasi ringan berbagi kernel OS. Docker & Kubernetes — lebih efisien dan cepat di-deploy.</p></div>
       </div>
     </div>
-
-    <!-- 5. STORAGE & JARINGAN -->
     <div class="section-block">
       <p class="eyebrow">Bagian 05</p>
       <h2>Penyimpanan Data dan Jaringan di Cloud</h2>
@@ -499,8 +451,6 @@ tbody tr:last-child td{border-bottom:none;}
         </table>
       </div>
     </div>
-
-    <!-- 6. KEAMANAN -->
     <div class="section-block">
       <p class="eyebrow">Bagian 06</p>
       <h2>Keamanan Cloud & Tata Kelola</h2>
@@ -510,19 +460,15 @@ tbody tr:last-child td{border-bottom:none;}
         <div style="background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.2);border-radius:12px;padding:20px;">
           <h4 style="color:#93c5fd;font-size:14px;font-weight:700;margin-bottom:12px">☁️ Penyedia Bertanggung Jawab</h4>
           <ul style="font-size:13px;color:#93c5fd;list-style:none;padding:0;line-height:2">
-            <li>✓ Keamanan fisik data center</li>
-            <li>✓ Keamanan jaringan infrastruktur</li>
-            <li>✓ Keamanan hypervisor</li>
-            <li>✓ Hardware dan fasilitas fisik</li>
+            <li>✓ Keamanan fisik data center</li><li>✓ Keamanan jaringan infrastruktur</li>
+            <li>✓ Keamanan hypervisor</li><li>✓ Hardware dan fasilitas fisik</li>
           </ul>
         </div>
         <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:12px;padding:20px;">
           <h4 style="color:#6ee7b7;font-size:14px;font-weight:700;margin-bottom:12px">👤 Pengguna Bertanggung Jawab</h4>
           <ul style="font-size:13px;color:#6ee7b7;list-style:none;padding:0;line-height:2">
-            <li>✓ Enkripsi data dan aplikasi</li>
-            <li>✓ Manajemen identitas (IAM)</li>
-            <li>✓ Konfigurasi firewall & akses</li>
-            <li>✓ Kepatuhan regulasi data</li>
+            <li>✓ Enkripsi data dan aplikasi</li><li>✓ Manajemen identitas (IAM)</li>
+            <li>✓ Konfigurasi firewall & akses</li><li>✓ Kepatuhan regulasi data</li>
           </ul>
         </div>
       </div>
@@ -535,8 +481,6 @@ tbody tr:last-child td{border-bottom:none;}
         <div class="sec-card"><div class="si">🔄</div><h4>Disaster Recovery</h4><p>Backup, replikasi multi-region, BCP</p></div>
       </div>
     </div>
-
-    <!-- 7. ARSITEKTUR MODERN -->
     <div class="section-block">
       <p class="eyebrow">Bagian 07</p>
       <h2>Arsitektur Cloud Modern</h2>
@@ -562,15 +506,12 @@ tbody tr:last-child td{border-bottom:none;}
         </table>
       </div>
     </div>
-
-    <!-- Footer materi -->
     <div style="background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;text-align:center;">
       <p style="font-size:22px;margin-bottom:10px">☁️</p>
       <p style="font-size:15px;font-weight:700">Projek Akhir — Mata Kuliah Cloud Computing</p>
       <p style="font-size:13px;color:var(--text2);margin-top:6px">Fathi Ahmad Raehan · NIM 24.240.0069 · Dosen: Widiyono, M.Kom</p>
       <p style="font-size:12px;color:var(--text3);margin-top:4px">STMIK Widya Pratama · 2025/2026</p>
     </div>
-
   </div>
 </div>
 
@@ -581,14 +522,8 @@ tbody tr:last-child td{border-bottom:none;}
       <h2>Masuk ke CloudSpace</h2>
       <p>Akses dashboard dan kelola file cloud kamu</p>
       <div class="error-msg" id="loginError"></div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" id="loginEmail" placeholder="nama@email.com">
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" id="loginPass" placeholder="••••••••">
-      </div>
+      <div class="form-group"><label>Email</label><input type="email" id="loginEmail" placeholder="nama@email.com"></div>
+      <div class="form-group"><label>Password</label><input type="password" id="loginPass" placeholder="••••••••"></div>
       <button class="btn-full" onclick="doLogin()">Masuk</button>
       <div class="auth-switch">Belum punya akun? <a onclick="showPage('register')">Daftar sekarang</a></div>
     </div>
@@ -602,18 +537,9 @@ tbody tr:last-child td{border-bottom:none;}
       <h2>Buat Akun CloudSpace</h2>
       <p>Daftar gratis dan mulai simpan file di cloud</p>
       <div class="error-msg" id="regError"></div>
-      <div class="form-group">
-        <label>Nama Lengkap</label>
-        <input type="text" id="regName" placeholder="Nama kamu">
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="email" id="regEmail" placeholder="nama@email.com">
-      </div>
-      <div class="form-group">
-        <label>Password</label>
-        <input type="password" id="regPass" placeholder="Min. 6 karakter">
-      </div>
+      <div class="form-group"><label>Nama Lengkap</label><input type="text" id="regName" placeholder="Nama kamu"></div>
+      <div class="form-group"><label>Email</label><input type="email" id="regEmail" placeholder="nama@email.com"></div>
+      <div class="form-group"><label>Password</label><input type="password" id="regPass" placeholder="Min. 6 karakter"></div>
       <button class="btn-full" onclick="doRegister()">Buat Akun</button>
       <div class="auth-switch">Sudah punya akun? <a onclick="showPage('login')">Masuk</a></div>
     </div>
@@ -623,32 +549,19 @@ tbody tr:last-child td{border-bottom:none;}
 <!-- ══════════ DASHBOARD PAGE ══════════ -->
 <div class="page" id="page-dashboard">
   <div class="dash-layout">
-    <!-- Sidebar -->
     <div class="dash-sidebar">
       <div class="sidebar-section">
         <div class="sidebar-title">Menu</div>
-        <div class="sidebar-item active" onclick="showDash('upload')" id="sb-upload">
-          <span class="si-icon">☁️</span> Upload File
-        </div>
-        <div class="sidebar-item" onclick="showDash('files')" id="sb-files">
-          <span class="si-icon">📁</span> File Saya
-        </div>
-        <div class="sidebar-item" onclick="showDash('profile')" id="sb-profile">
-          <span class="si-icon">👤</span> Profil
-        </div>
+        <div class="sidebar-item active" onclick="showDash('upload')" id="sb-upload"><span class="si-icon">☁️</span> Upload File</div>
+        <div class="sidebar-item" onclick="showDash('files')" id="sb-files"><span class="si-icon">📁</span> File Saya</div>
+        <div class="sidebar-item" onclick="showDash('profile')" id="sb-profile"><span class="si-icon">👤</span> Profil</div>
       </div>
       <div class="sidebar-section">
         <div class="sidebar-title">Info</div>
-        <div class="sidebar-item" onclick="showPage('materi')">
-          <span class="si-icon">📚</span> Materi Cloud
-        </div>
-        <div class="sidebar-item" onclick="logout()" style="color:#fca5a5">
-          <span class="si-icon">🚪</span> Keluar
-        </div>
+        <div class="sidebar-item" onclick="showPage('materi')"><span class="si-icon">📚</span> Materi Cloud</div>
+        <div class="sidebar-item" onclick="logout()" style="color:#fca5a5"><span class="si-icon">🚪</span> Keluar</div>
       </div>
     </div>
-
-    <!-- Main content -->
     <div class="dash-main">
       <!-- Upload Section -->
       <div id="dash-upload">
@@ -661,8 +574,6 @@ tbody tr:last-child td{border-bottom:none;}
           <div class="stat-card"><div class="sc-label">Total Upload</div><div class="sc-val" id="sc-uploads">0</div><div class="sc-sub">kali upload</div></div>
           <div class="stat-card"><div class="sc-label">Status</div><div class="sc-val" style="color:#10b981;font-size:18px">● Aktif</div><div class="sc-sub">akun terverifikasi</div></div>
         </div>
-
-        <!-- Progress -->
         <div class="progress-wrap" id="progressWrap">
           <div style="display:flex;justify-content:space-between;font-size:14px;font-weight:600;">
             <span id="progressName">Mengupload...</span>
@@ -671,8 +582,6 @@ tbody tr:last-child td{border-bottom:none;}
           <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
           <p style="font-size:12px;color:var(--text3)">Harap tunggu, file sedang diproses...</p>
         </div>
-
-        <!-- Upload area -->
         <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()" ondragover="onDragOver(event)" ondragleave="onDragLeave(event)" ondrop="onDrop(event)">
           <div class="upload-icon">☁️</div>
           <h3>Seret file ke sini</h3>
@@ -681,7 +590,6 @@ tbody tr:last-child td{border-bottom:none;}
           <input type="file" id="fileInput" style="display:none" multiple onchange="handleFiles(this.files)">
         </div>
       </div>
-
       <!-- Files Section -->
       <div id="dash-files" style="display:none">
         <div class="dash-header">
@@ -693,15 +601,10 @@ tbody tr:last-child td{border-bottom:none;}
             <span id="fileCount" style="font-size:13px;color:var(--text2)">0 file</span>
           </div>
           <div id="fileListContent">
-            <div class="empty-state">
-              <div class="es-icon">📭</div>
-              <h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Belum ada file</h3>
-              <p style="font-size:14px">Upload file pertama kamu dari menu Upload File</p>
-            </div>
+            <div class="empty-state"><div class="es-icon">📭</div><h3 style="font-size:16px;font-weight:700;margin-bottom:8px">Belum ada file</h3><p style="font-size:14px">Upload file pertama kamu dari menu Upload File</p></div>
           </div>
         </div>
       </div>
-
       <!-- Profile Section -->
       <div id="dash-profile" style="display:none">
         <div class="dash-header">
@@ -732,10 +635,16 @@ tbody tr:last-child td{border-bottom:none;}
 // ── STATE ──
 let currentUser = null;
 let users = JSON.parse(localStorage.getItem('cs_users') || '[]');
-let userFiles = {};
+let userFiles = [];
 
 function saveUsers() { localStorage.setItem('cs_users', JSON.stringify(users)); }
-function saveFiles() { localStorage.setItem('cs_files_' + currentUser?.email, JSON.stringify(userFiles)); }
+function saveFiles() {
+  try {
+    localStorage.setItem('cs_files_' + currentUser.email, JSON.stringify(userFiles));
+  } catch(e) {
+    showToast('Storage penuh! Hapus beberapa file lama.', 'error');
+  }
+}
 function loadFiles() {
   if (!currentUser) return;
   userFiles = JSON.parse(localStorage.getItem('cs_files_' + currentUser.email) || '[]');
@@ -762,9 +671,9 @@ function showDash(section) {
 // ── TOAST ──
 function showToast(msg, type='success') {
   const t = document.getElementById('toast');
-  t.textContent = (type === 'success' ? '✅ ' : '❌ ') + msg;
+  t.textContent = (type === 'success' ? '✅ ' : type === 'warning' ? '⚠️ ' : '❌ ') + msg;
   t.className = 'toast show ' + type;
-  setTimeout(() => t.className = 'toast', 3000);
+  setTimeout(() => t.className = 'toast', 3500);
 }
 
 // ── AUTH ──
@@ -810,7 +719,7 @@ function loginUser(user) {
 
 function logout() {
   currentUser = null;
-  userFiles = {};
+  userFiles = [];
   document.getElementById('navLinks').style.display = 'flex';
   document.getElementById('navUser').style.display = 'none';
   showPage('home');
@@ -826,11 +735,28 @@ function handleFiles(files) {
   if (!currentUser) { showPage('login'); return; }
   Array.from(files).forEach(file => {
     if (file.size > 50 * 1024 * 1024) { showToast('File ' + file.name + ' melebihi 50MB!', 'error'); return; }
-    simulateUpload(file);
+    // Peringatan file besar (>2MB) mungkin lambat
+    if (file.size > 2 * 1024 * 1024) {
+      showToast('File besar (' + formatSize(file.size) + '), mungkin butuh waktu lebih lama...', 'warning');
+    }
+    readAndUpload(file);
   });
 }
 
-function simulateUpload(file) {
+// ── BACA FILE SEBAGAI BASE64 LALU UPLOAD ──
+function readAndUpload(file) {
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    const base64 = e.target.result; // data:mime;base64,xxxxx
+    simulateUpload(file, base64);
+  };
+  reader.onerror = function() {
+    showToast('Gagal membaca file ' + file.name, 'error');
+  };
+  reader.readAsDataURL(file); // konversi ke Base64
+}
+
+function simulateUpload(file, base64) {
   const wrap = document.getElementById('progressWrap');
   const fill = document.getElementById('progressFill');
   const pct = document.getElementById('progressPct');
@@ -849,7 +775,7 @@ function simulateUpload(file) {
         wrap.style.display = 'none';
         fill.style.width = '0%';
         pct.textContent = '0%';
-        addFile(file);
+        addFile(file, base64); // ✅ simpan base64, bukan blob URL
         showToast(file.name + ' berhasil diupload!');
       }, 500);
     } else {
@@ -859,16 +785,17 @@ function simulateUpload(file) {
   }, 120);
 }
 
-function addFile(file) {
+function addFile(file, base64) {
   if (!Array.isArray(userFiles)) userFiles = [];
-  const icons = { image: '🖼️', video: '🎬', audio: '🎵', pdf: '📄', zip: '📦', default: '📎' };
+  const icons = { image:'🖼️', video:'🎬', audio:'🎵', pdf:'📄', zip:'📦', default:'📎' };
   let iconType = 'default';
   if (file.type.startsWith('image')) iconType = 'image';
   else if (file.type.startsWith('video')) iconType = 'video';
   else if (file.type.startsWith('audio')) iconType = 'audio';
   else if (file.type === 'application/pdf') iconType = 'pdf';
   else if (file.type.includes('zip') || file.type.includes('rar')) iconType = 'zip';
-  const colors = ['fi-blue', 'fi-green', 'fi-orange', 'fi-purple'];
+  const colors = ['fi-blue','fi-green','fi-orange','fi-purple'];
+
   userFiles.push({
     id: Date.now(),
     name: file.name,
@@ -877,8 +804,9 @@ function addFile(file) {
     icon: icons[iconType],
     color: colors[Math.floor(Math.random() * colors.length)],
     date: new Date().toLocaleDateString('id-ID', {day:'2-digit',month:'short',year:'numeric'}),
-    url: URL.createObjectURL(file)
+    url: base64   // ✅ Base64 permanen, tidak hilang saat refresh
   });
+
   currentUser.uploads = (currentUser.uploads || 0) + 1;
   const idx = users.findIndex(u => u.email === currentUser.email);
   if (idx > -1) users[idx] = currentUser;
@@ -917,25 +845,24 @@ function renderFiles() {
         <div class="fm">${formatSize(f.size)} · ${f.date}</div>
       </div>
       <div class="file-actions">
-        <button class="icon-btn" onclick="downloadFile('${f.id}')" title="Download">⬇️</button>
+        <button class="icon-btn" onclick="downloadFile(${f.id})" title="Download">⬇️</button>
         <button class="icon-btn danger" onclick="deleteFile(${f.id})" title="Hapus">🗑️</button>
       </div>
     </div>
   `).join('');
 }
 
+// ── DOWNLOAD PAKAI BASE64 — TIDAK AKAN GAGAL ──
 function downloadFile(id) {
   const f = userFiles.find(f => f.id == id);
-  if (!f) return;
-  if (f.url) {
-    const a = document.createElement('a');
-    a.href = f.url;
-    a.download = f.name;
-    a.click();
-    showToast('Mengunduh ' + f.name);
-  } else {
-    showToast('File tidak tersedia untuk diunduh', 'error');
-  }
+  if (!f || !f.url) { showToast('File tidak ditemukan', 'error'); return; }
+  const a = document.createElement('a');
+  a.href = f.url;        // Base64 URL langsung dipakai
+  a.download = f.name;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  showToast('Mengunduh ' + f.name + '...');
 }
 
 function deleteFile(id) {
@@ -960,4 +887,3 @@ function renderProfile() {
 </script>
 </body>
 </html>
-
